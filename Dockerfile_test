@@ -1,0 +1,5 @@
+FROM redis_build:latest
+
+WORKDIR /redis
+RUN apt-get upgrade -y
+RUN make --keep-going test
