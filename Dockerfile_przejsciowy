@@ -1,0 +1,6 @@
+FROM build_container:latest
+
+COPY . /app
+WORKDIR /app
+
+RUN make
